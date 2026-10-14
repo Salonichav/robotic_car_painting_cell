@@ -1,0 +1,85 @@
+MODULE Module1
+    CONST robtarget Target_10:=[[400,-200,200],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[400,-200,350],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[400,0,350],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40:=[[400,200,350],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50:=[[570.09664868,-28.842823533,356.102673777],[0.487098131,-0.389637777,0.722031706,-0.299312592],[-1,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_60:=[[536.310626782,182.141376928,415.945300777],[0.641503683,-0.449671719,0.573262116,-0.240081064],[0,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_70:=[[603.772022058,208.8203561,326.814709738],[0.450943971,-0.550412959,0.684874784,-0.156976557],[0,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_80:=[[1276.624780041,-604.371232122,310.114522296],[0.224953249,-0.462091159,0.847727836,-0.131245237],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_90:=[[458.182876334,-22.695611253,455.056492681],[0.534118038,-0.369832342,0.685974467,-0.32769039],[-1,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_100:=[[597.828964517,-43.829673199,449.003466021],[0.269600379,-0.517540131,0.728389803,-0.359048943],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_110:=[[559.878820052,-24.720704665,324.413388224],[0.383762397,-0.425827547,0.785510297,-0.233175678],[-1,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_120:=[[508.932685328,-22.955395227,223.680377578],[0.224953249,-0.462091159,0.847727836,-0.131245237],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_130:=[[458.663406409,-21.493128535,310.114522296],[0.224953249,-0.462091159,0.847727836,-0.131245237],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_140:=[[491.34564209,39.190811157,54.291900635],[0.329235061,-0.440944482,0.811216604,-0.197736843],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_150:=[[1063.977539063,39.190567017,38.082305908],[0.329235061,-0.440944482,0.811216604,-0.197736843],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_160:=[[462.529170372,-21.851131171,328.681062591],[0.271996662,-0.453691148,0.833200989,-0.161115705],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_170:=[[462.529170372,-21.851131171,328.681062591],[0.271996662,-0.453691148,0.833200989,-0.161115705],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    !***********************************************************
+    !
+    ! Module:  Module1
+    !
+    ! Description:
+    !   <Insert description here>
+    !
+    ! Author: sam
+    !
+    ! Version: 1.0
+    !
+    !***********************************************************
+    
+    
+    !***********************************************************
+    !
+    ! Procedure main
+    !
+    !   This is the entry point of your program
+    !
+    !***********************************************************
+    PROC main()
+    WHILE TRUE DO
+        Path_40;
+        Path_50;
+        Path_60;
+        Path_70;
+    ENDWHILE
+ENDPROC
+    PROC Path_10()
+        MoveL Target_10,v1000,z100,Paintgun\WObj:=wobj0;
+        MoveL Target_20,v1000,z100,Paintgun\WObj:=wobj0;
+        MoveL Target_30,v1000,z100,Paintgun\WObj:=wobj0;
+        MoveL Target_40,v1000,z100,Paintgun\WObj:=wobj0;
+    ENDPROC
+    PROC Path_20()
+        MoveL Target_50,v1000,z100,Paintgun\WObj:=wobj0;
+        MoveL Target_60,v1000,z100,Paintgun\WObj:=wobj0;
+        MoveL Target_70,v1000,z100,Paintgun\WObj:=wobj0;
+    ENDPROC
+    LOCAL PROC Path_30()
+        MoveJ Target_80,v1000,z100,Paintgun_1\WObj:=wobj0;
+        MoveJ Target_90,v1000,z100,Paintgun_1\WObj:=wobj0;
+        MoveL Target_110,v1000,z100,Paintgun_1\WObj:=wobj0;
+    ENDPROC
+    PROC Path_40()
+        MoveL Target_80,v1000,z100,Paintgun_1\WObj:=wobj0;
+        MoveJ Target_90,v1000,z100,Paintgun_1\WObj:=wobj0;
+        MoveL Target_110,v1000,z100,Paintgun_1\WObj:=wobj0;
+    ENDPROC
+    PROC Path_50()
+        MoveL Target_80,v1000,z100,Paintgun_1\WObj:=wobj0;
+        MoveL Target_90,v1000,z100,Paintgun_1\WObj:=wobj0;
+    ENDPROC
+    PROC Path_60()
+        MoveJ Target_120,v1000,z100,Paintgun_1\WObj:=wobj0;
+        MoveJ Target_130,v1000,z100,Paintgun_1\WObj:=wobj0;
+    ENDPROC
+    PROC Path_70()
+        MoveJ Target_140,v1000,z100,Paintgun_1\WObj:=wobj0;
+        MoveJ Target_150,v1000,z100,Paintgun_1\WObj:=wobj0;
+    ENDPROC
+    PROC Path_80()
+        MoveJ Target_160,v1000,z100,Paintgun_1\WObj:=wobj0;
+        MoveJ Target_170,v1000,z100,Paintgun_1\WObj:=wobj0;
+    ENDPROC
+ENDMODULE
